@@ -1,6 +1,6 @@
-LOGIN_PADRAO = "admin"
-SENHA_PADRAO = "123"
-LIMITE_TENTATIVAS = 5
+LOGIN = "admin"
+SENHA = "123"
+LIMITE_TENTATIVAS = 3
 
 
 def fazer_login():
@@ -12,7 +12,7 @@ def fazer_login():
         nome_usuario = input("Digite o usuário: ")
         senha_usuario = input("Digite a senha: ")
 
-        if nome_usuario == LOGIN_PADRAO and senha_usuario == SENHA_PADRAO:
+        if nome_usuario == LOGIN and senha_usuario == SENHA:
             print("\nLogin realizado com sucesso!")
             return True
 
@@ -46,7 +46,7 @@ def exibir_menu():
             sys.exit()
 
         else:
-            print("⚠️ Opção inválida!")
+            print(" Opção inválida!")
 
 
 exibir_menu()
